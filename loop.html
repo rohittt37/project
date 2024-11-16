@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - Loops</title>
+</head>
+<body>
+    
+    <script>
+        // what is loop?
+        // kisi cheez ko bar bar repeat krna ho toh hum loop ka use karte hai
+
+        // -- There are three types of loops
+        // 1. for loop
+        // 2. while loop
+        // 3. do while loop
+
+
+        // 1. For loop
+        // for(Initialize; condition; increment/decrement){
+        //     code to be executed
+        // }
+
+        // for(let i=0; i<=10; i++){
+        // document.write("Hello World" + "<br>");
+        // }
+
+        // 2. while loop
+        // initialize;
+        // while(condition){
+        //     code to be executed
+        //     increment/decrement
+        // }
+
+        // let i=0;
+        // while(i>=10){
+        //     document.write("Hello Javascript" + "<br>");
+        //     i++;
+        // }
+
+
+        // 3. Do While loop
+        // initialize;
+        // do{
+            //     code to be executed
+            // increment/decrement
+        // } while(condition);
+        // one time execution
+
+        // let i=0;
+        // do{
+        //     document.write(i + "<br>");
+        //     i++;
+        // }while(i<=100);
+
+        // Nested loop
+        // outer loop  -- row
+        // inner loop  -- coloum
+        let i,j;
+
+        for(i=1; i<7; i++){
+            for(j=1; j<7; j++){
+                if(i==1 || j==1 || j==6 || i==6){
+                    document.write("*  ");
+                }else{
+                    document.write("   ");
+                }
+            }
+            document.write("<br>");
+        }
+    </script>
+</body>
+</html>
